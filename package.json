@@ -2,7 +2,7 @@
 	"name": "blade-php",
 	"displayName": "Blade Syntax for PHP",
 	"description": "Blade syntax highlighting for (in) PHP",
-	"version": "0.1.8",
+	"version": "0.1.9",
 	"publisher": "namesmt",
 	"icon": "blade.png",
 	"author": {

@@ -1,5 +1,7 @@
 # [Blade Syntax for PHP](https://marketplace.visualstudio.com/items?itemName=namesmt.blade-php)
 
+##### Highly recommend to install: [Blade Color](https://marketplace.visualstudio.com/items?itemName=namesmt.blade-color)
+
 Blade syntax highlight support **for (in) `PHP`**.
 > Use with Language Mode: `PHP`, so others `PHP` exts should work (Intelephense,...etc)
 

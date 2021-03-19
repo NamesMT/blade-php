@@ -2,6 +2,7 @@
 
 Blade syntax highlight support **for (in) `PHP`**.
 > Use with Language Mode: `PHP`, so others `PHP` exts should work (Intelephense,...etc)
+
 > Additionally, switch to Language Mode: `Blade` to highlight only `Blade` (and `PHP` inside of Blade) syntaxes
 
 ## Screenshot

@@ -31,7 +31,7 @@ Todo:
 
 ## Contact
 
-Files any [issue(s)](https://github.com/onecentlin/laravel-blade-snippets-vscode/issues) or mail me: [trungdang6102@gmail.com](mailto:trungdang6102@gmail.com).
+Files any [issue(s)](https://github.com/NamesMT/blade-php/issues) or mail me: [trungdang6102@gmail.com](mailto:trungdang6102@gmail.com).
 
 ## Credits
 

@@ -2,28 +2,28 @@
 	"name": "blade-php",
 	"displayName": "Blade Syntax for PHP",
 	"description": "Blade syntax highlighting for (in) PHP",
-	"version": "0.1.6",
+	"version": "0.1.7",
 	"publisher": "namesmt",
 	"icon": "blade.png",
-    "author": {
-        "name": "Trung Dang",
-        "email": "trungdang6102@gmail.com",
-        "url": "https://fb.com/grim.reaper.slave"
-    },
+	"author": {
+		"name": "Trung Dang",
+		"email": "trungdang6102@gmail.com",
+		"url": "https://fb.com/grim.reaper.slave"
+	},
 	"homepage": "https://github.com/NamesMT/blade-php",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/NamesMT/blade-php"
-    },
-    "bugs": {
-        "url": "https://github.com/NamesMT/blade-php/issues"
-    },
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/NamesMT/blade-php"
+	},
+	"bugs": {
+		"url": "https://github.com/NamesMT/blade-php/issues"
+	},
 	"keywords": [
-        "blade",
-        "template",
-        "laravel",
-        "syntax"
-    ],
+		"blade",
+		"template",
+		"laravel",
+		"syntax"
+	],
 	"engines": {
 		"vscode": "^1.15.0"
 	},
@@ -32,28 +32,30 @@
 	],
 	"contributes": {
 		"languages": [
-            {
-                "id": "blade",
-                "aliases": [
-                    "Blade",
-                    "blade"
-                ],
-                "configuration": "./blade.configuration.json"
-            }
-        ],
+			{
+				"id": "blade",
+				"aliases": [
+					"Blade",
+					"blade"
+				],
+				"configuration": "./blade.configuration.json"
+			}
+		],
 		"grammars": [
 			{
 				"language": "blade",
 				"scopeName": "source.php.blade",
 				"path": "./syntaxes/blade.tmLanguage.json",
-				"injectTo": ["text.html.php"],
+				"injectTo": [
+					"text.html.php"
+				],
 				"embeddedLanguages": {
 					"comment.block.blade": "blade",
 					"meta.function.echo.blade": "blade",
 					"keyword.control.blade": "blade",
 					"meta.directive.blade": "blade",
 					"entity.name.function.blade": "blade"
-				  }
+				}
 			}
 		]
 	}

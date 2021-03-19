@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"injectionSelector": "L:text.html.php - (meta.embedded | meta.tag | comment.block.blade), L:(source.php.blade meta.tag - (comment.block.blade | meta.embedded.block.blade)), L:(source.js.embedded.html - (comment.block.blade | meta.embedded.block.blade))",
+	"injectionSelector": "L:text.html.php - (meta.embedded | meta.tag | comment.block.blade), L:(text.html.php meta.tag - (comment.block.blade | meta.embedded.block.blade)), L:(source.js.embedded.html - (comment.block.blade | meta.embedded.block.blade))",
 	"scopeName": "source.php.blade",
 	"name": "Blade",
 	"patterns": [

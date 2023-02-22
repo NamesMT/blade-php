@@ -1,9 +1,11 @@
 # [Blade Syntax for PHP](https://marketplace.visualstudio.com/items?itemName=namesmt.blade-php)
 
 ##### Highly recommend to install: [Blade Color](https://marketplace.visualstudio.com/items?itemName=namesmt.blade-color)
+> Unfortunately, Tabnine is recommended for now instead of the amazing Intelephense, as Intelephense doesn't support auto-complete for `Blade` blocks (`{{ }}`) yet
+
 
 Blade syntax highlight support **for (in) `PHP`**.
-> Use with Language Mode: `PHP`, so others `PHP` exts should work (Intelephense,...etc)
+> Use with Language Mode: `PHP`, so others `PHP` exts should work ([Intelephense](https://github.com/NamesMT/blade-php/blob/HEAD/vscode:extension/bmewburn.vscode-intelephense-client),...etc)
 
 > Additionally, switch to Language Mode: `Blade` to highlight only `Blade` (and `PHP` inside of Blade) syntaxes
 

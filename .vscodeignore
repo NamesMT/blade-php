@@ -2,3 +2,18 @@
 .vscode-test/**
 .gitignore
 vsc-extension-quickstart.md
+
+# Development / tooling assets that must not ship in the VSIX
+.github/**
+.gitattributes
+node_modules
+package-lock.json
+scripts/**
+*.vsix
+
+# The README loads the screenshot directly from GitHub (raw.githubusercontent.com),
+# so it doesn't need to be bundled into the extension (saves 1.4 MB).
+images/**
+
+# Superseded icon, not referenced by package.json ("icon": "blade.png").
+blade.old.png

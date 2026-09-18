@@ -58,11 +58,15 @@
 					"text.html.php"
 				],
 				"embeddedLanguages": {
+					"source.php": "php",
+					"source.css": "css",
+					"source.js": "javascript",
 					"comment.block.blade": "blade",
 					"meta.function.echo.blade": "blade",
 					"keyword.control.blade": "blade",
 					"meta.directive.blade": "blade",
-					"entity.name.function.blade": "blade"
+					"entity.name.function.blade": "blade",
+					"entity.name.tag.blade": "blade"
 				}
 			}
 		]

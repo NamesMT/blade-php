@@ -50,6 +50,13 @@ Files any [issue(s)](https://github.com/NamesMT/blade-php/issues) or mail me: [t
     + https://github.com/Medalink/laravel-blade
 
 
+## Development
+
+* `npm run validate` — JSON + grammar compile check.
+* `npm test` — grammar tokenization regression tests.
+* Publishing a new version is documented in [RELEASING.md](RELEASING.md).
+
+
 ## License
 
 **MIT**

@@ -32,9 +32,12 @@
 		"Programming Languages"
 	],
 	"scripts": {
-		"validate": "node scripts/validate.mjs"
+		"validate": "node scripts/validate.mjs",
+		"test": "node test/grammar.test.mjs",
+		"package": "vsce package"
 	},
 	"devDependencies": {
+		"@vscode/vsce": "^4.0.0",
 		"vscode-oniguruma": "^2.0.1",
 		"vscode-textmate": "^9.0.0"
 	},

@@ -1,0 +1,51 @@
+name: Release
+
+# Publish the extension to the VS Code Marketplace when a version tag is pushed.
+#
+# Required repository secret (Settings -> Secrets and variables -> Actions):
+#   VSCE_PAT  -> a Personal Access Token for the Azure DevOps organization that
+#                owns the "namesmt" publisher (https://dev.azure.com/.../_usersSettings/tokens)
+#
+# Tag convention: tags must be "v<package.json version>", e.g. `git tag v0.3.0`.
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  publish:
+    name: Publish to marketplace
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate JSON & compile grammar
+        run: npm run validate
+
+      - name: Tokenization regression test
+        run: npm test
+
+      - name: Check tag matches package version
+        run: |
+          TAG="${{ github.ref_name }}"
+          VERSION="$(node -p "require('./package.json').version")"
+          if [ "$TAG" != "v$VERSION" ]; then
+            echo "::error::Tag '$TAG' must match package.json version 'v$VERSION'"
+            exit 1
+          fi
+          echo "Publishing version $VERSION"
+
+      - name: Publish extension
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        run: npx vsce publish --pat "$VSCE_PAT"

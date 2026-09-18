@@ -11,8 +11,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  validate:
-    name: Validate & package
+  ci:
+    name: Validate, test & package
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -30,5 +30,8 @@ jobs:
       - name: Validate JSON & compile grammar
         run: npm run validate
 
+      - name: Tokenization regression test
+        run: npm test
+
       - name: Package extension
-        run: npx --yes @vscode/vsce package
+        run: npm run package

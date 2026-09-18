@@ -26,6 +26,9 @@ Todo:
 ## Features
 
 * `Blade` syntax highlight
+* `Blade` directives (`@if`, `@foreach`, `@section`, ...) with PHP highlighting inside
+* `Blade` components (`<x-component>`, `<x-slot:name>`, self-closing & namespaced) highlighted
+  distinctly from plain HTML elements
 * *More incoming <3*
 
 ## Blade Syntax Highlight

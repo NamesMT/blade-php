@@ -1,6 +1,5 @@
 # [Blade Syntax for PHP](https://marketplace.visualstudio.com/items?itemName=namesmt.blade-php)
 
-##### Highly recommend to install: [Blade Color](https://marketplace.visualstudio.com/items?itemName=namesmt.blade-color)
 > Unfortunately, Tabnine is recommended for now instead of the amazing Intelephense, as Intelephense doesn't support auto-complete for `Blade` blocks (`{{ }}`) yet
 
 

@@ -5,6 +5,12 @@ All notable changes to the "blade-php" extension will be documented in this file
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.1] - 2026-09-18
+
+### Changed
+- Remove the recommendation to install the now-deprecated `Blade Color` extension
+  from the README.
+
 ## [0.3.0] - 2026-09-18
 
 ### Added

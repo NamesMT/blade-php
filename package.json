@@ -3,6 +3,7 @@
 	"displayName": "Blade Syntax for PHP",
 	"description": "Blade syntax highlighting for (in) PHP",
 	"version": "0.3.0",
+	"license": "MIT",
 	"publisher": "namesmt",
 	"icon": "blade.png",
 	"author": {
@@ -30,6 +31,13 @@
 	"categories": [
 		"Programming Languages"
 	],
+	"scripts": {
+		"validate": "node scripts/validate.mjs"
+	},
+	"devDependencies": {
+		"vscode-oniguruma": "^2.0.1",
+		"vscode-textmate": "^9.0.0"
+	},
 	"contributes": {
 		"languages": [
 			{

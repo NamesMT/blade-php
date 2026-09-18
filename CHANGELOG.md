@@ -18,6 +18,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `@js`, `@checked`, `@selected`, `@disabled`, `@style`, `@readonly`, `@required`,
   `@use`, `@vite`, `@session`.
 
+### Changed
+- Map embedded `source.php`, `source.css`, and `source.js` scopes to their languages,
+  so embedded PHP (inside `{{ }}`, `@php`, directives) gets proper language features.
+
 ## [0.2.1] - 2023-02-23
 
 - Fix language configuration file (comment style).
